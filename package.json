@@ -1,0 +1,19 @@
+{
+  "name": "react-future-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reach/router": "^1.1.1",
+    "bluebird": "^3.5.1",
+    "react": "npm:@bmv437/react",
+    "react-dom": "npm:@bmv437/react-dom",
+    "react-scripts": "1.1.4",
+    "simple-cache-provider": "npm:@bmv437/simple-cache-provider"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
