@@ -1,13 +1,13 @@
 import React from 'react';
 import {createFetcher} from 'utils/future';
-import Promise from 'bluebird';
+import delay from 'utils/delay';
 
-const PostComments = React.lazy(() => import('components/PostComments'));
+const PostComments = React.lazy(() => import(/* webpackChunkName: 'post-comments' */ 'components/PostComments'));
 
 const getPost = async (postId) => {
   const json = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`).then((res) => res.json())
 
-  await Promise.delay(200); // fake delay
+  await delay(200); // fake delay
   return json;
 }
 

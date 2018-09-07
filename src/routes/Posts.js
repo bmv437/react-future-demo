@@ -1,12 +1,12 @@
-import React, {Placeholder} from 'react';
+import React from 'react';
 import {createFetcher} from 'utils/future';
-import Promise from 'bluebird';
+import delay from 'utils/delay';
 import {Link} from '@reach/router';
 
 const getPosts = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts').then((res) => res.json())
 
-  await Promise.delay(200); // fake delay
+  await delay(200); // fake delay
   return res;
 };
 

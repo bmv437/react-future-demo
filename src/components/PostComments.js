@@ -1,12 +1,12 @@
 import React from 'react';
 import {createFetcher} from 'utils/future';
-import Promise from 'bluebird';
+import delay from 'utils/delay';
 
 
 const getPostComments = async (postId) => {
   const json = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`).then((res) => res.json())
 
-  await Promise.delay(500); // fake delay
+  await delay(500); // fake delay
   return json;
 };
 

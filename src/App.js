@@ -4,9 +4,9 @@ import './App.css';
 import {Router, Link} from '@reach/router';
 
 // dynamic import routes
-const Home = React.lazy(() => import('routes/Home'));
-const Posts = React.lazy(() => import('routes/Posts'));
-const Post = React.lazy(() => import('routes/Post'));
+const Home = React.lazy(() => import(/* webpackChunkName: 'home' */ 'routes/Home'));
+const Posts = React.lazy(() => import(/* webpackChunkName: 'posts' */ 'routes/Posts'));
+const Post = React.lazy(() => import(/* webpackChunkName: 'post' */ 'routes/Post'));
 
 class App extends React.Component {
   render() {

@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@reach/router": "^1.1.1",
-    "bluebird": "^3.5.1",
     "react": "npm:@bmv437/react",
     "react-dom": "npm:@bmv437/react-dom",
     "react-scripts": "1.1.4",
